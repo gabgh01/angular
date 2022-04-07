@@ -1,0 +1,11 @@
+<div *ngFor="let person of listPersons">
+  <p
+    *ngIf="person.name.includes('p')"
+    [ngClass]="{ pepe: person.name.includes('p') }"
+    [ngStyle]="{ 'font-size': '20px' }"
+  >
+    {{ person.name }}
+  </p>
+  <p>{{ person.nickname }}</p>
+  <p>{{ person.email }}</p>
+</div>
